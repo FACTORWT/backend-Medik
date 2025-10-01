@@ -1,0 +1,542 @@
+{
+	"admin": {
+		"errors": {
+			"userNotFound": "¡Usuario no encontrado!",
+			"hospitalNotFound": "¡Hospital no encontrado!",
+			"blogNotFound": "¡Blog no encontrado!",
+			"missingRequiredParameters": "Faltan parámetros requeridos",
+			"categoryNotFound": "¡Categoría no encontrada!"
+		},
+		"messages": {
+			"doctorAccount": {
+				"active": "Su cuenta ha sido aprobada por el administrador y ahora está lista para comenzar a brindar atención a nuestros pacientes.",
+				"inactive": "Un administrador le ha bloqueado el acceso a esta aplicación. Para más información, contacte al administrador."
+			},
+			"patientAccount": {
+				"active": "Su cuenta ha sido desbloqueada por el administrador. Ahora puede crear citas con nuestros doctores verificados.",
+				"inactive": "Un administrador le ha bloqueado el acceso a esta aplicación. Para más información, contacte al administrador."
+			}
+		},
+		"blog": {
+			"missingRequiredParameter": "Falta un parámetro requerido.",
+			"categoryDeletedSuccessfully": "Categoría eliminada con éxito"
+		},
+		"generic": {
+			"error": "Ha ocurrido un error. Por favor, inténtelo de nuevo.",
+			"success": "Operación completada con éxito"
+		}
+	},
+	"appointment": {
+		"errors": {
+			"appointmentNotFound": "¡Cita no encontrada!",
+			"slotNotAvailable": "El espacio no está disponible",
+			"doctorNotFound": "¡Doctor no encontrado!",
+			"doctorInactive": "Este doctor está temporalmente bloqueado por el administrador.",
+			"missingRequiredParameter": "Falta un parámetro requerido",
+			"unexpectedError": "Ocurrió un error inesperado",
+			"noAppointmentsFound": "No se encontraron citas",
+			"cannotCompleteBeforeDoctor": "No puede completar la cita antes de que el doctor la marque como completada",
+			"cannotCancelCompletedAppointment": "No puede cancelar una cita ya completada",
+			"cancellationNotAllowed": "La cancelación no está permitida dentro de las 12 horas previas a la cita",
+			"walletNotFound": "Cartera no encontrada"
+		},
+		"messages": {
+			"appointmentCreated": "Cita creada con éxito",
+			"appointmentUpdated": "Cita actualizada con éxito",
+			"appointmentCompleted": "Cita marcada como completada",
+			"appointmentVerified": "Finalización de cita verificada",
+			"appointmentAbsent": "Cita marcada como ausente",
+			"refundProcessed": "Reembolso procesado con éxito",
+			"bookingCancelled": "Reserva cancelada",
+			"bookingRescheduled": "Reserva reprogramada",
+			"refundMessage": "Se ha procesado un reembolso por un monto de ${{amount}}."
+		},
+		"notifications": {
+			"appointmentCompletionNotification": "Su sesión con {{doctorName}} ha sido completada.",
+			"appointmentRescheduled": "Su sesión ha sido reprogramada de {{oldTime}} a {{newTime}}.",
+			"absenceNotification": "Se le ha marcado como ausente para la cita con {{doctorName}} programada para {{time}}.",
+			"doctorAbsentNotification": "Ha marcado al paciente como ausente para la cita programada para {{time}}.",
+			"patientAbsentNotification": "El doctor lo ha marcado como ausente para la cita programada para {{time}}.",
+			"cancellationNotification": "Su cita programada para {{time}} con {{doctorName}} ha sido cancelada. Motivo: {{reason}}",
+			"rescheduledPatient": "Hola {{patientName}}, su sesión programada para {{patientFormattedTime}} con {{doctorName}} ha sido cancelada. Motivo: {{cancelReason}}",
+			"rescheduledDoctor": "Hola {{doctorName}}, su sesión programada para {{doctorFormattedTime}} con {{patientName}} ha sido cancelada. Motivo: {{cancelReason}}",
+			"doctorAbsentMessage": "El paciente {{patientName}} le ha marcado como ausente para la reunión programada para {{doctorFormattedTime}}",
+			"patientAbsentMessage": "El Dr. {{doctorName}} le ha marcado como ausente para la reunión programada para {{patientFormattedTime}}",
+			"doctorActive": "El doctor ha sido activado.",
+			"doctorInactive": "El doctor ha sido desactivado.",
+			"patientActive": "El paciente ha sido activado.",
+			"patientInactive": "El paciente ha sido desactivado.",
+			"userStatusTitle": "El estado del usuario ha sido actualizado."
+		},
+		"refundPolicies": {
+			"policy_24h": "Los reembolsos por cancelaciones realizadas más de 24 horas antes de la cita recibirán un reembolso del 95%.",
+			"policy_12h_24h": "Los reembolsos por cancelaciones realizadas entre 12 y 24 horas antes de la cita recibirán un reembolso del 50%.",
+			"noRefund": "No se ofrece reembolso por cancelaciones realizadas menos de 12 horas antes de la cita."
+		},
+		"generic": {
+			"error": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+			"success": "Operación completada con éxito"
+		},
+		"calculatePatientRefund": {
+			"policy_24h": "El monto del reembolso es {{amount}} (reembolso del 95%).",
+			"policy_12h_24h": "El monto del reembolso es {{amount}} (reembolso del 50%).",
+			"noRefund": "No aplica reembolso."
+		}
+	},
+	"chat": {
+		"errors": {
+			"chatNotFound": "¡Chat no encontrado!",
+			"userNotFound": "Usuario no encontrado en los chats.",
+			"missingRequiredParameters": "Faltan parámetros requeridos",
+			"unexpectedError": "Ocurrió un error inesperado"
+		},
+		"messages": {
+			"chatCreated": "Chat creado con éxito",
+			"chatSaved": "Sesión de chat guardada con éxito",
+			"chatUpdated": "Chat actualizado con éxito",
+			"messageSent": "Mensaje enviado con éxito",
+			"messageReceived": "Mensaje recibido con éxito",
+			"chatDeleted": "Chat eliminado con éxito"
+		},
+		"notifications": {
+			"newMessageNotification": "Tienes un nuevo mensaje de {{senderName}}.",
+			"chatHistoryNotification": "Historial de chat con {{senderName}} obtenido con éxito.",
+			"messageErrorNotification": "Hubo un error al enviar el mensaje."
+		},
+		"generic": {
+			"error": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+			"success": "Operación completada con éxito"
+		}
+	},
+	"contact": {
+		"errors": {
+			"allFieldsRequired": "Todos los campos son requeridos"
+		},
+		"messages": {
+			"formSubmitted": "Formulario enviado con éxito"
+		}
+	},
+	"hospital": {
+		"errors": {
+			"hospitalNotFound": "Hospital no encontrado",
+			"missingRequiredParameters": "Faltan parámetros requeridos",
+			"equipmentNotFound": "Equipo no encontrado",
+			"recognitionNotFound": "Reconocimiento no encontrado",
+			"doctorNotFound": "Doctor no encontrado",
+			"associationNotFound": "Asociación no encontrada",
+			"invalidAction": "Acción inválida",
+			"doctorAlreadyAssociated": "El doctor ya está asociado con su hospital"
+		},
+		"messages": {
+			"hospitalCreated": "Hospital creado con éxito",
+			"hospitalUpdated": "Hospital actualizado con éxito",
+			"equipmentAdded": "Equipo agregado con éxito",
+			"recognitionAdded": "Reconocimiento agregado con éxito",
+			"associationApproved": "Asociación del doctor aprobada con éxito",
+			"associationRejected": "Asociación del doctor rechazada con éxito",
+			"doctorRemoved": "Doctor removido de la asociación del hospital",
+			"hospitalDoctorAdded": "Solicitud de hospital para agregar doctor enviada con éxito",
+			"hospitalDoctorRemoved": "Doctor removido del hospital"
+		},
+		"notifications": {
+			"newDoctorAssociationRequest": "{{hospitalName}} ha solicitado agregarlo a su hospital",
+			"doctorAssociationStatusUpdate": "Su solicitud para unirse a {{hospitalName}} ha sido {{status}}",
+			"hospitalUpdated": "{{hospitalName}} ha actualizado sus detalles"
+		},
+		"generic": {
+			"error": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+			"success": "Operación completada con éxito"
+		}
+	},
+	"history": {
+		"errors": {
+			"historyNotFound": "Historia no encontrada",
+			"missingRequiredParameters": "Faltan parámetros requeridos",
+			"diagnosisNotFound": "Diagnóstico no encontrado",
+			"vaccinationNotFound": "Vacunación no encontrada",
+			"allergyNotFound": "Alergia no encontrada",
+			"radiologyNotFound": "Radiología no encontrada",
+			"laboratoryNotFound": "Examen de laboratorio no encontrado",
+			"userNotFound": "Usuario no encontrado",
+			"invalidAction": "Acción inválida",
+			"unexpectedError": "Ocurrió un error inesperado. Por favor, inténtelo de nuevo más tarde.",
+			"prescriptionNotFound": "Receta no encontrada",
+			"prescriptionUnexpectedError": "Ocurrió un error inesperado al procesar la receta. Por favor, inténtelo de nuevo más tarde."
+		},
+		"messages": {
+			"historyCreated": "Historia guardada con éxito",
+			"historyUpdated": "Historia actualizada con éxito",
+			"diagnosisAdded": "Diagnóstico agregado con éxito",
+			"diagnosisUpdated": "Diagnóstico actualizado con éxito",
+			"diagnosisRemoved": "Diagnóstico eliminado con éxito",
+			"prescriptionAdded": "Receta agregada con éxito",
+			"prescriptionUpdated": "Receta actualizada con éxito",
+			"prescriptionRemoved": "Receta eliminada con éxito",
+			"vaccinationAdded": "Vacunación agregada con éxito",
+			"vaccinationUpdated": "Vacunación actualizada con éxito",
+			"vaccinationRemoved": "Vacunación eliminada con éxito",
+			"allergyAdded": "Alergia agregada con éxito",
+			"allergyUpdated": "Alergia actualizada con éxito",
+			"allergyRemoved": "Alergia eliminada con éxito",
+			"radiologyAdded": "Examen de radiología agregado con éxito",
+			"radiologyUpdated": "Examen de radiología actualizado con éxito",
+			"radiologyRemoved": "Examen de radiología eliminado con éxito",
+			"laboratoryAdded": "Examen de laboratorio agregado con éxito",
+			"laboratoryUpdated": "Examen de laboratorio actualizado con éxito",
+			"laboratoryRemoved": "Examen de laboratorio eliminado con éxito"
+		},
+		"notifications": {
+			"newDiagnosisNotification": "Se ha agregado un nuevo diagnóstico a su historia.",
+			"diagnosisUpdateNotification": "Se ha actualizado un diagnóstico en su historia.",
+			"prescriptionUpdateNotification": "Se ha actualizado una receta en su historia.",
+			"vaccinationUpdateNotification": "Se ha actualizado una vacunación en su historia.",
+			"allergyUpdateNotification": "Se ha actualizado una alergia en su historia.",
+			"radiologyUpdateNotification": "Se ha actualizado un examen de radiología en su historia.",
+			"laboratoryUpdateNotification": "Se ha actualizado un examen de laboratorio en su historia."
+		},
+		"generic": {
+			"error": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+			"success": "Operación completada con éxito"
+		}
+	},
+	"meeting": {
+		"errors": {
+			"roomIdNotFound": "El ID de la sala es incorrecto o no se encuentra",
+			"meetingNotFound": "Reunión no encontrada",
+			"missingRequiredParameters": "Faltan parámetros requeridos",
+			"userNotFound": "Usuario no encontrado",
+			"transcriptionFailed": "Transcripción fallida, por favor intente nuevamente",
+			"internalServerError": "Error interno del servidor",
+			"invalidAction": "Acción inválida",
+			"missingRequiredFields": "Faltan campos requeridos.",
+			"userLogNotFoundOrTimedOut": "Registro de usuario no encontrado o ya ha caducado"
+		},
+		"messages": {
+			"meetingCreated": "Reunión creada con éxito",
+			"meetingStarted": "Reunión iniciada con éxito",
+			"meetingEnded": "Reunión finalizada con éxito",
+			"meetingStatusUpdated": "Estado de la reunión actualizado con éxito",
+			"transcriptionGenerated": "Transcripción generada con éxito",
+			"timeInLogged": "Registro de entrada guardado con éxito",
+			"timeOutLogged": "Registro de salida guardado con éxito",
+			"meetingExpired": "La reunión ha caducado",
+			"streamCreated": "Stream creado con éxito"
+		},
+		"notifications": {
+			"meetingStartNotification": "La reunión ha comenzado.",
+			"meetingEndNotification": "La reunión ha finalizado.",
+			"timeInNotification": "Su entrada ha sido registrada.",
+			"timeOutNotification": "Su salida ha sido registrada.",
+			"meetingStatusUpdateNotification": "El estado de la reunión ha sido actualizado.",
+			"transcriptionGeneratedNotification": "La transcripción ha sido generada exitosamente para la reunión.",
+			"streamCreatedNotification": "Stream ha sido creado para la reunión."
+		},
+		"generic": {
+			"error": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+			"success": "Operación completada con éxito",
+			"internalServerError": "Error interno del servidor"
+		}
+	},
+	"prescription": {
+		"errors": {
+			"prescriptionNotFound": "¡Receta no encontrada!",
+			"appointmentNotFound": "¡Cita no encontrada!",
+			"missingRequiredParameters": "Faltan parámetros requeridos",
+			"userNotFound": "Usuario no encontrado",
+			"internalServerError": "Error interno del servidor",
+			"invalidAction": "Acción inválida",
+			"invalidIdFormat": "Formato de ID inválido",
+			"noPrescriptionsFound": "No se encontraron recetas para esta cita"
+		},
+		"messages": {
+			"prescriptionCreated": "Receta creada con éxito",
+			"prescriptionUpdated": "Receta actualizada con éxito",
+			"prescriptionDeleted": "Receta eliminada con éxito",
+			"appointmentStatusUpdated": "Estado de la cita actualizado con éxito",
+			"prescriptionAdded": "La receta ha sido agregada a la cita",
+			"doctor": "Doctor",
+			"education": "Educación",
+			"specialty": "Especialidad",
+			"email": "Correo electrónico",
+			"name": "Nombre",
+			"age": "Edad",
+			"gender": "Género",
+			"tablet": "Tableta",
+			"strength": "Fuerza",
+			"days": "Días",
+			"morning": "Mañana",
+			"afternoon": "Tarde",
+			"evening": "Noche",
+			"sno": "S. No"
+		},
+		"notifications": {
+			"prescriptionAddedNotification": "Se ha agregado una nueva receta a su cita.",
+			"prescriptionUpdatedNotification": "Se ha actualizado una receta en su cita.",
+			"prescriptionDeletedNotification": "Se ha eliminado una receta de su cita.",
+			"appointmentPrescribedNotification": "Su cita ha sido prescrita y los detalles de la receta han sido actualizados."
+		},
+		"generic": {
+			"error": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+			"success": "Operación completada con éxito"
+		}
+	},
+	"review": {
+		"errors": {
+			"missingRequiredParameter": "Falta un parámetro requerido",
+			"reviewsNotFound": "Reseñas no encontradas"
+		},
+		"messages": {
+			"reviewCreatedSuccessfully": "Reseña creada con éxito"
+		}
+	},
+	"session": {
+		"errors": {
+			"sessionNotFound": "¡Sesión no encontrada!",
+			"missingRequiredParameters": "Faltan parámetros requeridos",
+			"userNotFound": "Usuario no encontrado",
+			"internalServerError": "Error interno del servidor",
+			"invalidSessionId": "ID de sesión inválido"
+		},
+		"messages": {
+			"sessionCreated": "Sesión creada con éxito",
+			"sessionUpdated": "Sesión actualizada con éxito",
+			"sessionDeleted": "Sesión eliminada con éxito",
+			"chatHistoryFetched": "Historial de chat obtenido con éxito",
+			"sessionNotFoundMessage": "No se encontró la sesión con el ID proporcionado"
+		},
+		"notifications": {
+			"sessionCreatedNotification": "Se ha creado una nueva sesión.",
+			"sessionUpdatedNotification": "Los detalles de la sesión han sido actualizados.",
+			"sessionDeletedNotification": "La sesión ha sido eliminada con éxito."
+		},
+		"generic": {
+			"error": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+			"success": "Operación completada con éxito"
+		}
+	},
+	"stripe": {
+		"errors": {
+			"paymentIntentNotFound": "Intento de pago no encontrado.",
+			"paymentFailed": "Pago fallido.",
+			"missingRequiredParameters": "Faltan parámetros requeridos.",
+			"paymentIntentNotSucceeded": "El intento de pago no ha tenido éxito.",
+			"paymentNotFound": "Pago no encontrado.",
+			"appointmentNotFound": "Cita no encontrada.",
+			"meetingNotFound": "Reunión no encontrada.",
+			"paymentCreationFailed": "Creación de pago fallida.",
+			"reschedulingFailed": "El cambio de horario falló debido a problemas con el pago.",
+			"paymentIntentCreationFailed": "Creación de intento de pago fallida.",
+			"paymentIntentStatusNotSucceeded": "El estado del intento de pago no ha tenido éxito."
+		},
+		"messages": {
+			"paymentCreated": "Pago creado con éxito.",
+			"paymentIntentCreated": "Intento de pago creado con éxito.",
+			"paymentIntentUpdated": "Intento de pago actualizado con éxito.",
+			"paymentSuccess": "Pago procesado con éxito.",
+			"paymentRescheduled": "Pago para la sesión reprogramada procesado con éxito.",
+			"paymentIntentRescheduled": "Intento de pago reprogramado creado con éxito.",
+			"paymentCompleted": "Pago completado con éxito.",
+			"paymentNotCompleted": "Pago no completado.",
+			"paymentIntentRetrieved": "Intento de pago recuperado con éxito.",
+			"paymentSheetCreated": "Hoja de pago creada con éxito.",
+			"paymentIntentSucceeded": "El intento de pago ha tenido éxito."
+		},
+		"notifications": {
+			"paymentSuccessNotification": "Su pago ha sido procesado con éxito.",
+			"paymentFailureNotification": "Hubo un problema con su pago. Por favor, inténtelo de nuevo.",
+			"appointmentPaymentSuccessNotification": "El pago para su cita ha sido procesado con éxito.",
+			"paymentRescheduledNotification": "Su pago ha sido procesado con éxito para la sesión reprogramada.",
+			"paymentSuccessNotificationPatient": "Pago de ${{amount}} transferido con éxito para su cita con el Dr.{{doctorName}}.",
+			"paymentSuccessNotificationDoctor": "Pago de ${{amount}} recibido con éxito para la sesión con el paciente {{patientName}}.",
+			"successpayment": "Pago de ${{amount}} recibido con éxito para",
+			"appointmentCreated": "Hola ${appointment.patientName}, tu cita con el Dr.${appointment.doctorName}",
+			"booking-rescheduling": "Hola ${appointment.doctor.fullName}, tu sesión ha sido reprogramada desde ${previousFormatStartTime} ${previousFormatDate}, a ${doctorFormattedStartTime} ${doctorFormattedDate}"
+		},
+		"generic": {
+			"error": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+			"success": "Operación completada con éxito."
+		},
+		"rescheduleMessages": {
+			"bookingRescheduleNotification": "Su sesión con {{doctorName}} ha sido reprogramada de {{oldTime}} a {{newTime}}.",
+			"doctorRescheduleNotification": "Su sesión con {{patientName}} ha sido reprogramada de {{oldTime}} a {{newTime}}."
+		}
+	},
+	"transcription": {
+		"errors": {
+			"appointmentNotFound": "¡Cita no encontrada!",
+			"missingRequiredParameters": "Faltan parámetros requeridos.",
+			"unauthorizedAction": "No está autorizado para realizar esta acción.",
+			"transcriptionUpdateFailed": "Falló la actualización de la transcripción.",
+			"transcriptionDeletionFailed": "Falló la eliminación de la transcripción."
+		},
+		"messages": {
+			"transcriptionUpdated": "Transcripción actualizada con éxito.",
+			"transcriptionDeleted": "Transcripción eliminada con éxito."
+		},
+		"notifications": {
+			"transcriptionUpdatedNotification": "La transcripción para su cita ha sido actualizada.",
+			"transcriptionDeletedNotification": "La transcripción para su cita ha sido eliminada."
+		},
+		"generic": {
+			"error": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+			"success": "Operación completada con éxito."
+		}
+	},
+	"upload": {
+		"errors": {
+			"fileNotFound": "Archivo no encontrado.",
+			"fileDeletionFailed": "Falló la eliminación del archivo.",
+			"transcriptionFailed": "Falló la transcripción. Por favor, intente nuevamente.",
+			"uploadError": "Error al subir el archivo. Por favor, intente nuevamente."
+		},
+		"messages": {
+			"fileUploaded": "Archivo subido con éxito.",
+			"fileDeleted": "Archivo eliminado con éxito.",
+			"transcriptionGenerated": "Transcripción generada con éxito."
+		},
+		"notifications": {
+			"fileUploadNotification": "Se ha subido un nuevo archivo con éxito.",
+			"fileDeletionNotification": "El archivo ha sido eliminado con éxito.",
+			"transcriptionNotification": "La transcripción para su archivo ha sido generada con éxito."
+		},
+		"generic": {
+			"error": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+			"success": "Operación completada con éxito."
+		}
+	},
+	"user": {
+		"auth": {
+			"errors": {
+				"unauthorized": "Acceso no autorizado.",
+				"userNotFound": "Usuario no encontrado",
+				"userAlreadyRegisteredWithGoogle": "¡Ya estás registrado con Google!",
+				"roleNotAuthorized": "El usuario no está autorizado",
+				"invalidCredentials": "¡Nombre de usuario o contraseña inválidos!"
+			},
+			"messages": {
+				"authenticationRequired": "Se requiere autenticación.",
+				"authenticationOptional": "Autenticación opcional.",
+				"userFound": "Usuario encontrado con éxito.",
+				"userAuthorized": "Usuario autorizado con éxito."
+			},
+			"notifications": {
+				"roleAccess": "El usuario está autorizado como {role}.",
+				"roleAccessDenied": "El usuario no está autorizado como {role}.",
+				"userAuthenticated": "Usuario autenticado con éxito."
+			},
+			"generic": {
+				"error": "Ocurrió un error al procesar la solicitud.",
+				"success": "Operación completada con éxito."
+			},
+			"jwt": {
+				"secretKey": "Tu_Clave_Secreta_Aquí",
+				"tokenHeader": "Autorización",
+				"tokenPrefix": [
+					"Token",
+					"Bearer"
+				]
+			},
+			"roles": {
+				"user": "usuario",
+				"patient": "paciente",
+				"doctor": "doctor",
+				"admin": "administrador",
+				"hospital": "hospital"
+			}
+		},
+		"errors": {
+			"userNotFound": "Usuario no encontrado",
+			"userAlreadyExists": "El usuario ya existe",
+			"invalidPassword": "Contraseña inválida",
+			"missingRequiredFields": "Campos requeridos faltantes",
+			"emailNotVerified": "Correo electrónico no verificado",
+			"inactiveAccount": "Tu cuenta está inactiva",
+			"noAssociatedAccount": "¡No hay ninguna cuenta asociada a este correo electrónico!",
+			"oldAndNewPasswordSame": "La antigua y la nueva contraseña no pueden ser iguales",
+			"invalidOldPassword": "La contraseña antigua es incorrecta",
+			"invalidOtp": "OTP no válida o caducada",
+			"otpExpired": "OTP ha expirado",
+			"passwordMismatch": "Las contraseñas no coinciden",
+			"incorrectCurrentPassword": "Contraseña actual incorrecta",
+			"userBlocked": "Estás bloqueado por el administrador. Contacta al administrador del sitio.",
+			"userUnverified": "¡Tu correo electrónico no está verificado! Verifica tu correo electrónico e inténtalo de nuevo.",
+			"userAlreadyRegisteredWithProfile": "¡Ya estás registrado con correo electrónico y contraseña!",
+			"userAlreadyRegisteredWithGoogle": "¡Ya estás registrado con Google!",
+			"userAlreadyRegisteredWithLinkedIn": "¡Ya estás registrado con LinkedIn!",
+			"userAlreadyRegisteredWithSocialLogin": "¡Ya estás registrado con LinkedIn!",
+			"emailNotFound": "No se encontró ninguna dirección de correo electrónico vinculada a tu cuenta"
+		},
+		"messages": {
+			"loginSuccess": "Inicio de sesión exitoso",
+			"signupSuccess": "Registro exitoso",
+			"profileUpdated": "Perfil actualizado con éxito",
+			"passwordChanged": "Contraseña cambiada con éxito",
+			"emailVerificationSent": "Correo de verificación enviado con éxito",
+			"otpVerified": "OTP verificado con éxito",
+			"otpResent": "OTP reenviado con éxito",
+			"newPasswordSet": "Nueva contraseña configurada",
+			"userLoggedOut": "Usuario desconectado con éxito",
+			"userProfileUpdated": "Perfil de usuario actualizado con éxito",
+			"hospitalProfileUpdated": "Perfil del hospital actualizado con éxito"
+		},
+		"notifications": {
+			"accountActivation": "Tu cuenta ahora está activa.",
+			"profileCompletion": "Completa tu perfil para acceder a todas las funciones.",
+			"profileApproval": "Tu perfil está en revisión.",
+			"newAppointment": "Tienes una nueva solicitud de cita.",
+			"appointmentStatusUpdate": "El estado de tu cita ha sido actualizado."
+		},
+		"generic": {
+			"error": "Ocurrió un error. Por favor, inténtalo de nuevo.",
+			"success": "Operación completada con éxito."
+		},
+		"emailVerification": {
+			"emailVerified": "Correo electrónico verificado con éxito.",
+			"emailVerificationFailed": "La verificación de correo electrónico falló. Por favor, inténtalo de nuevo.",
+			"verificationExpired": "La verificación de correo electrónico ha expirado."
+		}
+	},
+	"wallet": {
+		"errors": {
+			"missingRequiredParameter": "Falta un parámetro requerido.",
+			"insufficientBalance": "No tiene suficiente saldo para retirar.",
+			"stripeAccountNotConnected": "Conéctese primero con Stripe para un retiro sin problemas.",
+			"paymentNotFound": "Pago no encontrado",
+			"stripeError": "Error en la solicitud a Stripe",
+			"invalidTransaction": "Transacción inválida"
+		},
+		"messages": {
+			"stripeConnected": "Se ha conectado con éxito con Stripe.",
+			"withdrawSuccess": "Monto retirado con éxito.",
+			"withdrawAllSuccess": "Todos los fondos han sido retirados con éxito.",
+			"walletUpdated": "Cartera actualizada con éxito."
+		},
+		"notifications": {
+			"stripeConnection": "Hola {username}, estás conectado con éxito con Stripe.",
+			"withdrawalNotification": "Hola {fullName}, has retirado con éxito un monto de {amount} de tu cartera.",
+			"walletUpdated": "Cartera actualizada con éxito para {username}."
+		},
+		"generic": {
+			"error": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+			"success": "Operación completada con éxito."
+		},
+		"stripe": {
+			"oauthUrl": "https://connect.stripe.com/oauth/authorize?response_type=code&scope=read_write&client_id={StripeClientId}",
+			"callbackSuccess": "Cuenta de Stripe conectada con éxito.",
+			"callbackError": "Error durante la conexión con la cuenta de Stripe."
+		}
+	},
+	"pricing": {
+		"errors": {
+			"alreadyHaveSubscription": "Ya tienes una suscripción activa.",
+			"noSubscription": "No tienes ninguna suscripción activa",
+			"noAiConsultations": "No tienes consultas de IA restantes.",
+			"noMedicalRecord": "No tienes solicitudes restantes para agregar registros médicos.",
+			"noPlan": "No hay un plan asociado con tu suscripción.",
+			"expired": "Su suscripción ha expirado. Por favor, renuévela."
+		},
+		"messages": {
+			"subscriptionActivated": "Suscripción activada"
+		}
+	}
+}

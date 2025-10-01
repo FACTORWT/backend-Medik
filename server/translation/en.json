@@ -1,0 +1,534 @@
+{
+	"admin": {
+		"errors": {
+			"userNotFound": "User not found!",
+			"hospitalNotFound": "Hospital not found!",
+			"blogNotFound": "Blog not found!",
+			"missingRequiredParameters": "Missing required parameters",
+			"categoryNotFound": "Category not found"
+		},
+		"messages": {
+			"doctorAccount": {
+				"active": "Your account has been approved by the administrator, and you are now ready to start providing care to our patients.",
+				"inactive": "An administrator has blocked you from running this app. For more information, contact the administrator."
+			},
+			"patientAccount": {
+				"active": "Your account has been unblocked by the administrator. Now you are free to create appointments with our verified doctors.",
+				"inactive": "An administrator has blocked you from running this app. For more information, contact the administrator."
+			}
+		},
+		"blog": {
+			"missingRequiredParameter": "Missing required parameter.",
+			"categoryDeletedSuccessfully": "Category deleted successfully"
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully"
+		}
+	},
+	"appointment": {
+		"errors": {
+			"appointmentNotFound": "Appointment not found!",
+			"slotNotAvailable": "Slot is not available",
+			"doctorNotFound": "Doctor not found!",
+			"doctorInactive": "This Doctor is temporarily blocked by the admin.",
+			"missingRequiredParameter": "Missing required parameter",
+			"unexpectedError": "Unexpected error occurred",
+			"noAppointmentsFound": "No appointments found",
+			"cannotCompleteBeforeDoctor": "You cannot complete the appointment before the doctor marked it completed",
+			"cannotCancelCompletedAppointment": "You cannot cancel a completed appointment",
+			"cancellationNotAllowed": "Cancellation is not allowed within 12 hours of the appointment",
+			"walletNotFound": "Wallet not found"
+		},
+		"messages": {
+			"appointmentCreated": "Appointment created successfully",
+			"appointmentUpdated": "Appointment updated successfully",
+			"appointmentCompleted": "Appointment marked as completed",
+			"appointmentVerified": "Appointment completion verified",
+			"appointmentAbsent": "Appointment is marked as absent",
+			"refundProcessed": "Refund processed successfully",
+			"bookingCancelled": "Booking cancelled",
+			"bookingRescheduled": "Booking rescheduled",
+			"refundMessage": "A refund amount of ${{amount}} has been processed."
+		},
+		"notifications": {
+			"appointmentCompletionNotification": "Your session with {{doctorName}} has been completed.",
+			"appointmentRescheduled": "Your session has been rescheduled from {{oldTime}} to {{newTime}}.",
+			"absenceNotification": "You have been marked absent for the appointment with {{doctorName}} scheduled on {{time}}.",
+			"doctorAbsentNotification": "You have marked the patient as absent for the appointment scheduled on {{time}}.",
+			"patientAbsentNotification": "The doctor has marked you as absent for the appointment scheduled on {{time}}.",
+			"cancellationNotification": "Your appointment scheduled on {{time}} with {{doctorName}} has been cancelled. Reason: {{reason}}",
+			"rescheduledPatient": "Hello {{patientName}}, your session on {{patientFormattedTime}} with {{doctorName}} has been cancelled. Reason: {{cancelReason}}",
+			"rescheduledDoctor": "Hello {{doctorName}}, your session on {{doctorFormattedTime}} with {{patientName}} has been cancelled. Reason: {{cancelReason}}",
+			"doctorAbsentMessage": "The patient {{patientName}} has marked you as absent for meeting scheduled on {{doctorFormattedTime}}",
+			"patientAbsentMessage": "Dr {{doctorName}} has marked you as absent for meeting scheduled on {{patientFormattedTime}}",
+			"doctorActive": "The doctor has been activated.",
+			"doctorInactive": "The doctor has been deactivated.",
+			"patientActive": "The patient has been activated.",
+			"patientInactive": "The patient has been deactivated.",
+			"userStatusTitle": "User status has been updated."
+		},
+		"refundPolicies": {
+			"policy_24h": "Refunds for cancellations made more than 24 hours before the appointment will receive a 95% refund.",
+			"policy_12h_24h": "Refunds for cancellations made between 12 and 24 hours before the appointment will receive a 50% refund.",
+			"noRefund": "No refund for cancellations made less than 12 hours before the appointment."
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully"
+		},
+		"calculatePatientRefund": {
+			"policy_24h": "Refund amount is {{amount}} (95% refund).",
+			"policy_12h_24h": "Refund amount is {{amount}} (50% refund).",
+			"noRefund": "No refund applicable."
+		}
+	},
+	"chat": {
+		"errors": {
+			"chatNotFound": "Chat not found!",
+			"userNotFound": "User not found in chats.",
+			"missingRequiredParameters": "Missing required parameters",
+			"unexpectedError": "Unexpected error occurred"
+		},
+		"messages": {
+			"chatCreated": "Chat created successfully",
+			"chatSaved": "Chat session saved successfully",
+			"chatUpdated": "Chat updated successfully",
+			"messageSent": "Message sent successfully",
+			"messageReceived": "Message received successfully",
+			"chatDeleted": "Chat deleted successfully"
+		},
+		"notifications": {
+			"newMessageNotification": "You have a new message from {{senderName}}.",
+			"chatHistoryNotification": "Chat history with {{senderName}} fetched successfully.",
+			"messageErrorNotification": "There was an error while sending the message."
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully"
+		}
+	},
+	"contact": {
+		"errors": {
+			"allFieldsRequired": "All fields are required"
+		},
+		"messages": {
+			"formSubmitted": "Form submitted successfully"
+		}
+	},
+	"hospital": {
+		"errors": {
+			"hospitalNotFound": "Hospital not found",
+			"missingRequiredParameters": "Missing required parameters",
+			"equipmentNotFound": "Equipment not found",
+			"recognitionNotFound": "Recognition not found",
+			"doctorNotFound": "Doctor not found",
+			"associationNotFound": "Association not found",
+			"invalidAction": "Invalid action",
+			"doctorAlreadyAssociated": "Doctor already associated with your hospital"
+		},
+		"messages": {
+			"hospitalCreated": "Hospital created successfully",
+			"hospitalUpdated": "Hospital updated successfully",
+			"equipmentAdded": "Equipment added successfully",
+			"recognitionAdded": "Recognition added successfully",
+			"associationApproved": "Doctor's association approved successfully",
+			"associationRejected": "Doctor's association rejected successfully",
+			"doctorRemoved": "Doctor removed from hospital association",
+			"hospitalDoctorAdded": "Hospital request to add doctor sent successfully",
+			"hospitalDoctorRemoved": "Doctor removed from hospital"
+		},
+		"notifications": {
+			"newDoctorAssociationRequest": "{{hospitalName}} has requested to add you to their hospital",
+			"doctorAssociationStatusUpdate": "Your request to join {{hospitalName}} has been {{status}}",
+			"hospitalUpdated": "{{hospitalName}} has updated their details"
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully"
+		}
+	},
+	"history": {
+		"errors": {
+			"historyNotFound": "History not found",
+			"missingRequiredParameters": "Missing required parameters",
+			"diagnosisNotFound": "Diagnosis not found",
+			"vaccinationNotFound": "Vaccination not found",
+			"allergyNotFound": "Allergy not found",
+			"radiologyNotFound": "Radiology not found",
+			"laboratoryNotFound": "Laboratory test not found",
+			"userNotFound": "User not found",
+			"invalidAction": "Invalid action",
+			"unexpectedError": "An unexpected error occurred. Please try again later.",
+			"prescriptionNotFound": "Prescription not found",
+			"prescriptionUnexpectedError": "An unexpected error occurred while processing the prescription. Please try again later."
+		},
+		"messages": {
+			"historyCreated": "History saved successfully",
+			"historyUpdated": "History updated successfully",
+			"diagnosisAdded": "Diagnosis added successfully",
+			"diagnosisUpdated": "Diagnosis updated successfully",
+			"diagnosisRemoved": "Diagnosis removed successfully",
+			"prescriptionAdded": "Prescription added successfully",
+			"prescriptionUpdated": "Prescription updated successfully",
+			"prescriptionRemoved": "Prescription removed successfully",
+			"vaccinationAdded": "Vaccination added successfully",
+			"vaccinationUpdated": "Vaccination updated successfully",
+			"vaccinationRemoved": "Vaccination removed successfully",
+			"allergyAdded": "Allergy added successfully",
+			"allergyUpdated": "Allergy updated successfully",
+			"allergyRemoved": "Allergy removed successfully",
+			"radiologyAdded": "Radiology test added successfully",
+			"radiologyUpdated": "Radiology test updated successfully",
+			"radiologyRemoved": "Radiology test removed successfully",
+			"laboratoryAdded": "Laboratory test added successfully",
+			"laboratoryUpdated": "Laboratory test updated successfully",
+			"laboratoryRemoved": "Laboratory test removed successfully"
+		},
+		"notifications": {
+			"newDiagnosisNotification": "A new diagnosis has been added to your history.",
+			"diagnosisUpdateNotification": "A diagnosis has been updated in your history.",
+			"prescriptionUpdateNotification": "A prescription has been updated in your history.",
+			"vaccinationUpdateNotification": "A vaccination has been updated in your history.",
+			"allergyUpdateNotification": "An allergy has been updated in your history.",
+			"radiologyUpdateNotification": "A radiology test has been updated in your history.",
+			"laboratoryUpdateNotification": "A laboratory test has been updated in your history."
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully"
+		}
+	},
+	"meeting": {
+		"errors": {
+			"roomIdNotFound": "Room ID is wrong or not found",
+			"meetingNotFound": "Meeting not found",
+			"missingRequiredParameters": "Missing required parameters",
+			"userNotFound": "User not found",
+			"transcriptionFailed": "Transcription failed, please try again",
+			"internalServerError": "Internal server error",
+			"invalidAction": "Invalid action",
+			"missingRequiredFields": "Missing required fields.",
+			"userLogNotFoundOrTimedOut": "User log not found or already timed out"
+		},
+		"messages": {
+			"meetingCreated": "Meeting created successfully",
+			"meetingStarted": "Meeting started successfully",
+			"meetingEnded": "Meeting ended successfully",
+			"meetingStatusUpdated": "Meeting status updated successfully",
+			"transcriptionGenerated": "Transcription generated successfully",
+			"timeInLogged": "Time-in log recorded successfully",
+			"timeOutLogged": "Time-out log recorded successfully",
+			"meetingExpired": "Meeting has expired",
+			"streamCreated": "Stream created successfully"
+		},
+		"notifications": {
+			"meetingStartNotification": "The meeting has started.",
+			"meetingEndNotification": "The meeting has ended.",
+			"timeInNotification": "Your time-in has been logged.",
+			"timeOutNotification": "Your time-out has been logged.",
+			"meetingStatusUpdateNotification": "The meeting status has been updated.",
+			"transcriptionGeneratedNotification": "Transcription has been successfully generated for the meeting.",
+			"streamCreatedNotification": "Stream has been created for the meeting."
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully",
+			"internalServerError": "Internal server error"
+		}
+	},
+	"prescription": {
+		"errors": {
+			"prescriptionNotFound": "Prescription not found!",
+			"appointmentNotFound": "Appointment not found!",
+			"missingRequiredParameters": "Missing required parameters",
+			"userNotFound": "User not found",
+			"internalServerError": "Internal server error",
+			"invalidAction": "Invalid action",
+			"invalidIdFormat": "Invalid ID format",
+			"noPrescriptionsFound": "No prescriptions found for this appointment"
+		},
+		"messages": {
+			"prescriptionCreated": "Prescription created successfully",
+			"prescriptionUpdated": "Prescription updated successfully",
+			"prescriptionDeleted": "Prescription deleted successfully",
+			"appointmentStatusUpdated": "Appointment status updated successfully",
+			"prescriptionAdded": "Prescription has been added to the appointment",
+			"doctor": "Doctor",
+			"education": "Education",
+			"specialty": "Specialty",
+			"email": "Email",
+			"name": "Name",
+			"age": "Age",
+			"gender": "Gender",
+			"tablet": "Tablet",
+			"strength": "Strength",
+			"days": "Days",
+			"morning": "Morning",
+			"afternoon": "Afternoon",
+			"evening": "Evening",
+			"sno": "S. No"
+		},
+		"notifications": {
+			"prescriptionAddedNotification": "A new prescription has been added to your appointment.",
+			"prescriptionUpdatedNotification": "A prescription has been updated in your appointment.",
+			"prescriptionDeletedNotification": "A prescription has been deleted from your appointment.",
+			"appointmentPrescribedNotification": "Your appointment has been prescribed, and prescription details are updated."
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully"
+		}
+	},
+	"review": {
+		"errors": {
+			"missingRequiredParameter": "Missing required parameter",
+			"reviewsNotFound": "Reviews not found"
+		},
+		"messages": {
+			"reviewCreatedSuccessfully": "Review created successfully"
+		}
+	},
+	"session": {
+		"errors": {
+			"sessionNotFound": "Session not found!",
+			"missingRequiredParameters": "Missing required parameters",
+			"userNotFound": "User not found",
+			"internalServerError": "Internal server error",
+			"invalidSessionId": "Invalid Session ID"
+		},
+		"messages": {
+			"sessionCreated": "Session created successfully",
+			"sessionUpdated": "Session updated successfully",
+			"sessionDeleted": "Session deleted successfully",
+			"chatHistoryFetched": "Chat history fetched successfully",
+			"sessionNotFoundMessage": "Session with the provided ID not found"
+		},
+		"notifications": {
+			"sessionCreatedNotification": "A new session has been created.",
+			"sessionUpdatedNotification": "Session details have been updated.",
+			"sessionDeletedNotification": "Session has been deleted successfully."
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully"
+		}
+	},
+	"stripe": {
+		"errors": {
+			"paymentIntentNotFound": "Payment intent not found.",
+			"paymentFailed": "Payment failed.",
+			"missingRequiredParameters": "Missing required parameters.",
+			"paymentIntentNotSucceeded": "Payment intent has not succeeded.",
+			"paymentNotFound": "Payment not found.",
+			"appointmentNotFound": "Appointment not found.",
+			"meetingNotFound": "Meeting not found.",
+			"paymentCreationFailed": "Payment creation failed.",
+			"reschedulingFailed": "Rescheduling failed due to payment issues.",
+			"paymentIntentCreationFailed": "Payment intent creation failed.",
+			"paymentIntentStatusNotSucceeded": "Payment intent status is not succeeded."
+		},
+		"messages": {
+			"paymentCreated": "Payment created successfully.",
+			"paymentIntentCreated": "Payment intent created successfully.",
+			"paymentIntentUpdated": "Payment intent updated successfully.",
+			"paymentSuccess": "Payment processed successfully.",
+			"paymentRescheduled": "Payment for rescheduled session processed successfully.",
+			"paymentIntentRescheduled": "Rescheduling payment intent created successfully.",
+			"paymentCompleted": "Payment completed successfully.",
+			"paymentNotCompleted": "Payment not completed.",
+			"paymentIntentRetrieved": "Payment intent retrieved successfully.",
+			"paymentSheetCreated": "Payment sheet created successfully.",
+			"paymentIntentSucceeded": "Payment intent has succeeded."
+		},
+		"notifications": {
+			"paymentSuccessNotification": "Your payment has been processed successfully.",
+			"paymentFailureNotification": "There was an issue with your payment. Please try again.",
+			"appointmentPaymentSuccessNotification": "Payment for your appointment has been successfully processed.",
+			"paymentRescheduledNotification": "Your payment has been successfully processed for the rescheduled session.",
+			"paymentSuccessNotificationPatient": "Payment of ${{amount}} successfully transferred for your appointment with Dr.{{doctorName}}.",
+			"paymentSuccessNotificationDoctor": "Payment of ${{amount}} successfully received for the session with {{patientName}}.",
+			"successpayment": "Payment of ${{amount}} successfully send",
+			"appointmentCreated": "Hello ${appointment.patientName}, your appointment with Dr.${appointment.doctorName}",
+			"booking-rescheduling": "Hello ${appointment.doctor.fullName}, your session has been rescheduled from ${previousFormatStartTime} ${previousFormatDate}, to ${doctorFormattedStartTime} ${doctorFormattedDate}"
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully."
+		},
+		"rescheduleMessages": {
+			"bookingRescheduleNotification": "Your session with {{doctorName}} has been rescheduled from {{oldTime}} to {{newTime}}.",
+			"doctorRescheduleNotification": "Your session with {{patientName}} has been rescheduled from {{oldTime}} to {{newTime}}."
+		}
+	},
+	"transcription": {
+		"errors": {
+			"appointmentNotFound": "Appointment not found!",
+			"missingRequiredParameters": "Missing required parameters.",
+			"unauthorizedAction": "You are not authorized to perform this action.",
+			"transcriptionUpdateFailed": "Failed to update transcription.",
+			"transcriptionDeletionFailed": "Failed to delete transcription."
+		},
+		"messages": {
+			"transcriptionUpdated": "Transcription updated successfully.",
+			"transcriptionDeleted": "Transcription deleted successfully."
+		},
+		"notifications": {
+			"transcriptionUpdatedNotification": "The transcription for your appointment has been updated.",
+			"transcriptionDeletedNotification": "The transcription for your appointment has been deleted."
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully."
+		}
+	},
+	"upload": {
+		"errors": {
+			"fileNotFound": "File not found.",
+			"fileDeletionFailed": "Failed to delete file.",
+			"transcriptionFailed": "Transcription failed. Please try again.",
+			"uploadError": "Error uploading file. Please try again."
+		},
+		"messages": {
+			"fileUploaded": "File uploaded successfully.",
+			"fileDeleted": "File deleted successfully.",
+			"transcriptionGenerated": "Transcription generated successfully."
+		},
+		"notifications": {
+			"fileUploadNotification": "A new file has been uploaded successfully.",
+			"fileDeletionNotification": "The file has been deleted successfully.",
+			"transcriptionNotification": "Transcription for your file has been successfully generated."
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully."
+		}
+	},
+	"user": {
+		"auth": {
+			"errors": {
+				"unauthorized": "Unauthorized access.",
+				"userNotFound": "User not found",
+				"userAlreadyRegisteredWithGoogle": "You’re already registered with google!!",
+				"roleNotAuthorized": "User is not authorized",
+				"invalidCredentials": "Username or password is invalid!!"
+			},
+			"messages": {
+				"authenticationRequired": "Authentication required.",
+				"authenticationOptional": "Authentication optional.",
+				"userFound": "User found successfully.",
+				"userAuthorized": "User authorized successfully."
+			},
+			"notifications": {
+				"roleAccess": "User is authorized as {role}.",
+				"roleAccessDenied": "User is not authorized as {role}.",
+				"userAuthenticated": "User successfully authenticated."
+			},
+			"generic": {
+				"error": "An error occurred while processing the request.",
+				"success": "Operation completed successfully."
+			},
+			"roles": {
+				"user": "user",
+				"patient": "patient",
+				"doctor": "doctor",
+				"admin": "admin",
+				"hospital": "hospital"
+			}
+		},
+		"errors": {
+			"userNotFound": "User not found",
+			"userAlreadyExists": "User already exists",
+			"noAssociatedAccount": "No account is associated with this email!!",
+			"oldAndNewPasswordSame": "Old and new password can not be same",
+			"invalidOldPassword": "Old password is incorrect",
+			"invalidPassword": "Invalid password",
+			"missingRequiredFields": "Missing required fields",
+			"emailNotVerified": "Email not verified",
+			"inactiveAccount": "Your account is inactive",
+			"invalidOtp": "Invalid OTP or expired",
+			"otpExpired": "OTP has expired",
+			"passwordMismatch": "Passwords do not match",
+			"incorrectCurrentPassword": "Incorrect current password",
+			"userBlocked": "You're blocked by admin. Contact to site admin.",
+			"userUnverified": "Your email is not verified yet! Please verify your email and try again!!!",
+			"userAlreadyRegisteredWithProfile": "You’re already registered with Email & Password!",
+			"userAlreadyRegisteredWithGoogle": "You’re already registered with google!!",
+			"userAlreadyRegisteredWithLinkedIn": "You’re already registered with linkedIn!!",
+			"userAlreadyRegisteredWithSocialLogin": "You’re already registered with linkedIn!!",
+			"emailNotFound": "We didn't get any linked email address from your account"
+		},
+		"messages": {
+			"loginSuccess": "Login successful",
+			"signupSuccess": "Signup successful",
+			"profileUpdated": "Profile updated successfully",
+			"passwordChanged": "Password changed successfully",
+			"emailVerificationSent": "Verification email sent successfully",
+			"otpVerified": "OTP verified successfully",
+			"otpResent": "OTP resent successfully",
+			"newPasswordSet": "New password has been set",
+			"userLoggedOut": "User logged out successfully",
+			"userProfileUpdated": "User profile updated successfully",
+			"hospitalProfileUpdated": "Hospital profile updated successfully"
+		},
+		"notifications": {
+			"accountActivation": "Your account is now active.",
+			"profileCompletion": "Complete your profile to access all features.",
+			"profileApproval": "Your profile is under review.",
+			"newAppointment": "You have a new appointment request.",
+			"appointmentStatusUpdate": "The status of your appointment has been updated."
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully."
+		},
+		"emailVerification": {
+			"emailVerified": "Email successfully verified.",
+			"emailVerificationFailed": "Email verification failed. Please try again.",
+			"verificationExpired": "Email verification expired."
+		}
+	},
+	"wallet": {
+		"errors": {
+			"missingRequiredParameter": "Missing required parameter.",
+			"insufficientBalance": "You don't have enough balance to withdraw.",
+			"stripeAccountNotConnected": "Connect with Stripe first for smooth withdrawal.",
+			"paymentNotFound": "Payment not found",
+			"stripeError": "Error in Stripe request",
+			"invalidTransaction": "Invalid transaction"
+		},
+		"messages": {
+			"stripeConnected": "You are successfully connected with Stripe.",
+			"withdrawSuccess": "Amount withdrawn successfully.",
+			"withdrawAllSuccess": "All funds have been withdrawn successfully.",
+			"walletUpdated": "Wallet updated successfully."
+		},
+		"notifications": {
+			"stripeConnection": "Hello {username}, you are successfully connected with Stripe.",
+			"withdrawalNotification": "Hello {fullName}, you have successfully withdrawn an amount of {amount} from your wallet.",
+			"walletUpdated": "Wallet updated successfully for {username}."
+		},
+		"generic": {
+			"error": "An error occurred. Please try again.",
+			"success": "Operation completed successfully."
+		},
+		"stripe": {
+			"oauthUrl": "https://connect.stripe.com/oauth/authorize?response_type=code&scope=read_write&client_id={StripeClientId}",
+			"callbackSuccess": "Stripe account connected successfully.",
+			"callbackError": "Error during Stripe account connection."
+		}
+	},
+	"pricing": {
+		"errors": {
+			"alreadyHaveSubscription": "You already have an active subscription.",
+			"noSubscription": "You don't have any active subscription",
+			"noAiConsultations": "You have no remaining AI consultations.",
+			"noMedicalRecord": "You have no remaining request to add medical records",
+			"noPlan": "No plan associated with your subscription.",
+			"expired": "Your subscription has expired. Please renew your subscription."
+		},
+		"messages": {
+			"subscriptionActivated": "Subscription activated"
+		}
+	}
+}
