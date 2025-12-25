@@ -8,6 +8,7 @@ const {OPEN_AI_KEY} = require("../../config/common");
 
 const User = require("../../models/User");
 const auth = require("../auth");
+const { OPEN_AI_KEY } = require("../../config/common");
 
 let Chat = mongoose.model("Chat");
 

@@ -29,6 +29,7 @@ const common = {
 	TwilioAuthToken: process.env.TWILIO_AUTH_TOKEN,
 	TwilioAccountSid: process.env.TWILIO_ACCOUNT_SID,
 	TwilioVerifyServiceSid: process.env.TWILIO_VERIFY_SERVICE_SID,
+  OPEN_AI_KEY: process.env.OPEN_AI_KEY,
 
 
 
